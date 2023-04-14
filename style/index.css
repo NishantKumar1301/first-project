@@ -32,8 +32,6 @@
     width:100%;
     margin:5rem auto;
     font-size: 3rem;
-    transition:transform 3s ease-out 1s ;
-    transform: scale(1.05);
 }
 #btn a{
     padding: 1rem;
