@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(249, 243, 243);
+    margin:0;
+    padding: 0;
+    width:100%;
+}
+
+
+#nishant{
+    background: linear-gradient(0deg, rgb(28, 97, 131),rgb(85, 101, 248));
+}
+#logo{
+    margin: 0;
+    font-family: 'DynaPuff';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    color:white;
+}
+
+#logo:hover{
+    cursor: pointer;
+    color:rgb(202, 135, 210);
+    border:1px solid white;
+}
+#navbarSupportedContent{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    margin:0 1rem;
+    font-weight: bold;
+    color: white;
+}
+#nk:hover{
+    border:0.5px solid white;
+}
+.img{
+    height:3rem;
+    width:3rem;
+    object-fit: cover;
+    background-color: lightseagreen;
+    display: flex;
+}
+footer{
+    text-align: center;
+    background: linear-gradient(90deg,rgb(234, 220, 246),rgb(166, 158, 237));
+    margin-top: 0%;
+}
+footer img{
+    width:4rem;
+    height:2rem;
+    margin:0 0.4rem;
+    border-radius: 5px;
+}
+#header nn{
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+@media(min-width:48rem){
+    #logo{
+        margin:1rem 30rem 1rem 3rem;
+    }
+    footer img{
+        width:10rem;
+        height:4rem;
+        margin:0 1rem;
+        border-radius: 5px;
+    }
+    
+}
+@media(max-width :48rem){
+    #first{
+        height:55rem;
+    }
+    #second{
+        height:80rem;
+    }
+    #third{
+        
+        height:48rem;
+    }
+}
+
+

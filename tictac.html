@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Images/favicon-32x32.png" type="/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="/style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/overlay.css">
+    <link rel="stylesheet" href="/style/configuration.css">
+    <link rel="stylesheet" href="/style/game.css">
+    <link rel="stylesheet" href="/style/nk.css">
+    <link href="/style/style1.css" rel="stylesheet">
+    <script src="/scripts/config.js" defer></script>
+    <script src="/scripts/game.js" defer></script>
+    <script src="/scripts/app.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer></script>
+</head>
+<body id="second">
+    <header id="nn">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nishant">
+            <a class="navbar-brand" href="/index.html" id="logo">bitroll</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" id="nk">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </li>
+            <li class="nav-item dropdown active" id="nk">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Name : Nishant Kumar</a>
+                <a class="dropdown-item" href="#">Current Status: Undergraguated Student</a>
+                <a class="dropdown-item" href="#">College : NIT,Patna</a>
+                <a class="dropdown-item" href="#">Branch : Computer Science</a>
+                <a class="dropdown-item" href="#">Semester : 2</a>
+                <a class="dropdown-item" href="#">School:Jeewan Public School</a>
+                <a class="dropdown-item" href="#">Adress : Chauradano,Bihar</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Skills : C,Java,HTML,CSS,JAVA-SCRIPT</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active" id="nk">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"><img src="/Images/gmail.jpg" alt="Gmail" class="img"><p>nishantkumarfps@gmail.com</p><p>nishantk.ug22.cs@nitp.ac.in</p></a>
+                <a class="dropdown-item" href="https://www.facebook.com/nishantkumar.nishant.12764/" target="blank"><p>facebook</p> </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><img src="/Images/phone.jpg" alt="phone" class="img"> <p>9122992931</p><p>9097558709</p></a>
+              </div>
+            </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+ 
+    <div id="backdrop"></div>
+   <header id="main-header">
+    <h1>Play Tic, Tac, Toe</h1>
+    <p>Built with HTML, CSS, JavaScript and-of-course-lots of love</p>
+   </header> 
+   <main>
+    <aside class="modal" id="config-overlay">
+        <h2>Choose Your Name</h2>
+        <form>
+            <div class="form-control">
+                <label for="playername">Player Name</label>
+                <input type="text" name="playername" id="playername" requrired>
+            </div>
+            <p id="config-errors"></p>
+            <div>
+                <button type="reset" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+                <button type="submit" class="btn">Confirm</button>
+            </div>
+        </form>
+    </aside>
+    <section id="game-configuration">
+       <ol>
+        <li>
+            <article id="player-1-data">
+                <h2>Player 1</h2>
+                <h3>PLAYER NAME</h3>
+                <p class="player-symbol">X</p>
+                <button class="btn btn-alt" id="edit-player-1-btn" data-playerid="1">Edit</button>
+            </article>
+        </li>
+        <li>
+            <article id="player-2-data">
+                <h2>Player 2</h2>
+                <h3>PLAYER NAME</h2>
+                <p class="player-symbol">0</p>
+                <button class="btn btn-alt" id="edit-player-2-btn" data-playerid="2">Edit</button>
+            </article>
+        </li>
+       </ol> 
+       <button class="btn" id="start-game-btn">Start New Game</button>
+    </section>
+    <section id="active-game">
+        <article id="game-over">
+            <h2>You won,<span id="win">PLAYER NAME</span> </h2>
+            <p>Click "Start New Game" above, to start a new game! </p>
+        </article>
+
+        <p>It's your turn <span id="active-player-name">PLAYER NAME</span></p>
+        <ol id="game-board">
+            <li data-row="1" data-col="1" ></li>
+            <li data-row="1" data-col="2"></li>
+            <li data-row="1" data-col="3"></li>
+
+            <li data-row="2" data-col="1" ></li>
+            <li data-row="2" data-col="2"></li>
+            <li data-row="2" data-col="3"></li>
+
+            <li data-row="3" data-col="1" ></li>
+            <li data-row="3" data-col="2"></li>
+            <li data-row="3" data-col="3"></li>
+
+        </ol>
+    </section>
+   </main>
+   <footer>
+    <a href="https://www.linkedin.com/in/nishant-kumar-4a2293257/" target="_blank"><img src="/Images/linkedin.jpeg" alt="facebook"> </a>
+    <a href="https://www.facebook.com/nishantkumar.nishant.12764/" target="_blank"><img src="/Images/facebook.jpg" alt="insta-logo"> </a>
+   </footer>
+</body>
+</html>
